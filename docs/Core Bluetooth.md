@@ -26,4 +26,4 @@ title: Core Bluetooth
 
 
 
-[返回](./index.md)
+[< 返回首页](./index.md)
