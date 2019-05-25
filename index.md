@@ -2,7 +2,4 @@
 layout: default
 ---
 
-# [测试](./docs/测试.md)
-
-
-[TOC]
+# [Core Bluetooth 2019年5月25日](./docs/Bluetooth.md)
