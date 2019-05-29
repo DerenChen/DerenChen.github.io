@@ -40,11 +40,11 @@ bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-fram
 
 
 ## 链接参考
-[Realm github][2]
-[Realm官网][1]
-[Realm官方 Objective-C 3.0.1 中文文档][3]
-[Realm在iOS中的简单使用][4]
-[Realm数据库 从入门到“放弃”][5]
+- [Realm github][2]
+- [Realm官网][1]
+- [Realm官方 Objective-C 3.0.1 中文文档][3]
+- [Realm在iOS中的简单使用][4]
+- [Realm数据库 从入门到“放弃”][5]
 
 
 
@@ -56,4 +56,4 @@ bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-fram
 [6]: https://static.realm.io/downloads/objc/realm-objc-3.15.0.zip "Realm-objc-3.15.0.zip 下载 302MB"
 [7]: http://www.openradar.me/radar?id=6409498411401216 "APP商店提交的bug"
 
-[< 返回首页](./index.md)
+[<< 返回首页](../index.md)
