@@ -23,19 +23,26 @@ title: Realm
 > 1. iOS 8以上版本，macOS 10.9以上版本，tvOS与watchOS所有版本。
 > 2. 使用Xcode 9.2以上版本。
 
-### 1、手动安装
-* 下载[最新版本][6]并解压；
-* 从解压文件路径`ios/dynamic/`中的`Realm.framework`，添加到Xcode项目`“General” -> “Embedded Binaries”`。确认为`Copy items if needed`后点击`Finish`添加；
-* 在单元测试Target的`“Build Settings”`中，在`“Framework Search Paths”`中添加`Realm.framework`的上级目录；
-* 如果是`Swift`加载`Realm`，请添加`Swift/RLMSupport.swift`文件到Xcoed工程文件中。
-* 如果在`iOS`、`watchOS`或者`tvOS`项目中使用`Realm`，请在您应用目标的`”Build Phases”`中，创建一个新的`”Run Script Phase”`，并将：
+### 一、手动安装
+1. 下载[最新版本 3.15.0][6]并解压；
+2. 从解压文件路径`ios/dynamic/`中的`Realm.framework`，添加到Xcode项目`“General” -> “Embedded Binaries”`。确认为`Copy items if needed`后点击`Finish`添加；
+3. 在单元测试Target的`“Build Settings”`中，在`“Framework Search Paths”`中添加`Realm.framework`的上级目录；
+4. 如果是`Swift`加载`Realm`，请添加`Swift/RLMSupport.swift`文件到Xcoed工程文件中。
+5. 如果在`iOS`、`watchOS`或者`tvOS`项目中使用`Realm`，请在您应用目标的`”Build Phases”`中，创建一个新的`”Run Script Phase”`，并将：
 ```ruby
 bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh"
 ```
 这条脚本复制到文本框中。因为要绕过[APP商店提交的bug][7]，这一步在打包通用设备的二进制发布版本时是必须的。
 
-### 2、使用`CocoaPods`安装
-### 3、Xcode插件
+### 二、使用`CocoaPods`安装
+> 需要`CocoaPods 1.1.0` 以上版本
+1. 在项目`Podfile`文件中，添加`pod 'Realm'`和`pod 'Realm/Headers'`。
+2. 在终端运行`pod install`。
+3. 同上，如果是`Swift`，请添加`Swift/RLMSupport.swift`文件到Xcoed工程文件中。
+
+### 三、Xcode插件
+* 在下载的包中，打开运行`/puilin`中的项目。
+* 然后重启Xcode，在创建新文件中就可以创建xxx文件了。
 
 
 
@@ -56,4 +63,4 @@ bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-fram
 [6]: https://static.realm.io/downloads/objc/realm-objc-3.15.0.zip "Realm-objc-3.15.0.zip 下载 302MB"
 [7]: http://www.openradar.me/radar?id=6409498411401216 "APP商店提交的bug"
 
-[<< 返回首页](../index.md)
+[<< 返回首页](/index.md)
