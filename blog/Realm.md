@@ -63,4 +63,4 @@ bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-fram
 [6]: https://static.realm.io/downloads/objc/realm-objc-3.15.0.zip "Realm-objc-3.15.0.zip 下载 302MB"
 [7]: http://www.openradar.me/radar?id=6409498411401216 "APP商店提交的bug"
 
-[<< 返回首页](/index.md)
+[<< 返回首页](../)
