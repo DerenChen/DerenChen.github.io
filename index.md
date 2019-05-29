@@ -2,8 +2,5 @@
 layout: default
 ---
 
-[Realm iOS中的使用][1]
+[Realm iOS中的使用](./docs/Realm.md)
 
-
-
-[1]: ./docs/Realm.md "Realm iOS中的使用"
