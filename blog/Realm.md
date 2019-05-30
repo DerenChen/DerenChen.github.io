@@ -41,8 +41,9 @@ bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-fram
 3. 同上，如果是`Swift`，请添加`Swift/RLMSupport.swift`文件到Xcoed工程文件中。
 
 ### 三、Xcode插件
-* 在下载的包中，打开运行`/puilin`中的项目。
-* 然后重启Xcode，在创建新文件中就可以创建xxx文件了。
+* 在下载的包中，打开运行`/plugin/`中的项目。
+* 然后重启Xcode，在创建新文件中就可以创建`RLMObject`类了。
+* 当需要新建`RLMObject`类时，在新建类的选项中选择`Realm Model Object`即可。
 
 
 
