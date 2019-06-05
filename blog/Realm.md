@@ -12,6 +12,7 @@ title: Realm
 * `Realm`是一个专门针对移动平台设计的数据库。
 * `Realm`是一个跨平台的移动数据库引擎， 支持`Objective-C`、`Swift`、`Java`、`React Native`、`Xamarin`等多种编程语言。
 * `Realm`是由核心数据引擎`C++`打造，是拥有独立的数据库存储引擎，可以方便、高效的完成数据库的各种操作。
+
 ### 二、`Realm`的优势与亮点
 1. 开源
 2. 简单易用
@@ -45,7 +46,7 @@ bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-fram
 * 然后重启Xcode，在创建新文件中就可以创建`RLMObject`类了。
 * 当需要新建`RLMObject`类时，在新建类的选项中选择`Realm Model Object`即可。
 
-## Realm 使用
+## Realm 数据库
 ### 一、配置Realm数据库
 
 
