@@ -23,11 +23,13 @@ struct ContentView: View {
     }
 }
 // 预览 视图
+#if DEBUG
 struct ContentView_Preview: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+#endif
 ```
 5. `Editor -> Editor and Canvas `显示画布，点击`Resume`进行视图预览。
 6. 当修改视图`body`中代码时，会更新到画布视图中。
